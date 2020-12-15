@@ -15,7 +15,7 @@
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
-  "homepage": "https//:SlobodanDodic.github.io/movie-app",
+  "homepage": "https://github.com/SlobodanDodic/movie-app",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
