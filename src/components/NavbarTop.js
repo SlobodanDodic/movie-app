@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NavbarTop = (props) => {
   return (
     <div className="navbar">
-      <Link to="home">
+      <Link to="/">
         <img src={searchIcon} alt="search" style={{ width: "2em" }} />
       </Link>
 

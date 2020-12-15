@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter as Router, Redirect, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import NavbarTop from "./components/NavbarTop";
 import Home from "./components/Home";
 import Favourite from "./components/Favourite";
@@ -55,8 +55,6 @@ const App = () => {
     <div className="App">
       <Router basename="movie-app">
         <NavbarTop searchValue={searchValue} setSearchValue={setSearchValue} />
-
-        {/*        <Route path="/" exact component={() => <Redirect to="/home" />} /> */}
 
         <Route
           path="/"
