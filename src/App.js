@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Redirect, Route } from "react-router-dom";
 import NavbarTop from "./components/NavbarTop";
 import Home from "./components/Home";
 import Favourite from "./components/Favourite";
@@ -53,27 +53,27 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename="movie-app">
         <NavbarTop searchValue={searchValue} setSearchValue={setSearchValue} />
 
-        <Switch>
-          <Route
-            path="/"
-            exact
-            component={() => (
-              <Home movies={movies} handleFavouritesClick={AddFavouriteMovie} />
-            )}
-          />
-          <Route
-            path="/favourite"
-            component={() => (
-              <Favourite
-                movies={favourites}
-                handleFavouritesClick={removeFavouriteMovie}
-              />
-            )}
-          />
-        </Switch>
+        {/*        <Route path="/" exact component={() => <Redirect to="/home" />} /> */}
+
+        <Route
+          path="/"
+          exact
+          component={() => (
+            <Home movies={movies} handleFavouritesClick={AddFavouriteMovie} />
+          )}
+        />
+        <Route
+          path="/favourite"
+          component={() => (
+            <Favourite
+              movies={favourites}
+              handleFavouritesClick={removeFavouriteMovie}
+            />
+          )}
+        />
       </Router>
     </div>
   );
