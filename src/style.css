@@ -1,0 +1,55 @@
+* {
+  margin: 0 auto;
+  background-color: rgb(24, 0, 0);
+}
+
+.App {
+  max-width: 800px;
+  text-align: center;
+  background-color: rgb(24, 0, 0);
+  padding: 0px 10px;
+}
+
+.navbar {
+  background-color: rgb(24, 0, 0);
+  max-width: 800px;
+  text-align: center !important;
+  margin: 0px auto;
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+a {
+  color: inherit !important;
+}
+
+.col-2 {
+  padding: 0px !important;
+}
+
+.form-control {
+  font-size: 12px !important;
+  text-align: center;
+}
+
+.card-body {
+  color: white;
+  border-top: 2px solid white;
+}
+
+.card {
+  border: 2px double rgba(255, 255, 255, 0.445) !important;
+  background-color: rgb(24, 0, 0) !important;
+  margin: 10px;
+}
+
+.card-footer {
+  text-decoration: underline;
+  font-size: 14px;
+  color: rgb(235, 235, 235);
+}
+
+.card-footer:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
